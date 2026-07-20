@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f3ee;
+  --foreground: #16140f;
+  --foreground-muted: #6f6a5f;
+  --line: rgba(22, 20, 15, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-instrument);
+  --font-display: var(--font-newsreader);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
