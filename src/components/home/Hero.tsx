@@ -29,7 +29,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-xs text-[11px] uppercase tracking-[0.18em] text-white/80"
+            className="max-w-[240px] text-[11px] uppercase leading-relaxed tracking-[0.18em] text-white/80 sm:max-w-xs"
           >
             Estilismo — Dirección de Imagen — Consultoría Creativa
           </motion.h1>

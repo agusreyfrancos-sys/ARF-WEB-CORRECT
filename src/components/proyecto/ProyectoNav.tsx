@@ -13,7 +13,7 @@ export function ProyectoNav({
 
   return (
     <section className="border-t border-line py-16 sm:py-20">
-      <Container className="flex items-center justify-between gap-6">
+      <Container className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
         {anterior ? (
           <Link
             href={`/proyectos/${anterior.slug}`}
@@ -32,7 +32,7 @@ export function ProyectoNav({
         {siguiente ? (
           <Link
             href={`/proyectos/${siguiente.slug}`}
-            className="group flex flex-col items-end gap-1 text-right"
+            className="group flex flex-col items-start gap-1 text-left sm:items-end sm:text-right"
           >
             <span className="text-[11px] uppercase tracking-[0.18em] text-foreground-muted">
               Siguiente
